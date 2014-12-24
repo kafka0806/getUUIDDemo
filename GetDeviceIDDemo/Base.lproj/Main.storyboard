@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="niH-1b-NOk">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.8647806187" green="0.097623684022871055" blue="0.12160074793117838" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="getDeviceID">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DeviceID" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9G-s3-RpR">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <color key="backgroundColor" red="0.8647806187" green="0.8647806187" blue="0.8647806187" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0j0-Dp-jch">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <state key="normal" title="UpLoad">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="100" y="373" width="200" height="30"/>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="i9G-s3-RpR" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="120" id="4s0-ix-pRf"/>
+                            <constraint firstItem="niH-1b-NOk" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="240" id="H5A-7b-SSQ"/>
+                            <constraint firstItem="0j0-Dp-jch" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="320" id="IaB-ak-xpQ"/>
+                            <constraint firstAttribute="trailing" secondItem="niH-1b-NOk" secondAttribute="trailing" constant="100" id="QGM-eo-DAg"/>
+                            <constraint firstItem="i9G-s3-RpR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="ViN-qO-VVn"/>
+                            <constraint firstItem="niH-1b-NOk" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="100" id="n9d-hQ-bfN"/>
+                            <constraint firstItem="0j0-Dp-jch" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="100" id="nsk-Pf-4ga"/>
+                            <constraint firstAttribute="trailing" secondItem="i9G-s3-RpR" secondAttribute="trailing" constant="10" id="yOq-yF-e0N"/>
+                            <constraint firstAttribute="trailing" secondItem="0j0-Dp-jch" secondAttribute="trailing" constant="100" id="yVZ-zc-BSg"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="niH-1b-NOk"/>
+                                <exclude reference="i9G-s3-RpR"/>
+                                <exclude reference="0j0-Dp-jch"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="4s0-ix-pRf"/>
+                                <exclude reference="ViN-qO-VVn"/>
+                                <exclude reference="yOq-yF-e0N"/>
+                                <exclude reference="H5A-7b-SSQ"/>
+                                <exclude reference="QGM-eo-DAg"/>
+                                <exclude reference="n9d-hQ-bfN"/>
+                                <exclude reference="IaB-ak-xpQ"/>
+                                <exclude reference="nsk-Pf-4ga"/>
+                                <exclude reference="yVZ-zc-BSg"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="niH-1b-NOk"/>
+                                <include reference="i9G-s3-RpR"/>
+                                <include reference="0j0-Dp-jch"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="4s0-ix-pRf"/>
+                                <include reference="ViN-qO-VVn"/>
+                                <include reference="yOq-yF-e0N"/>
+                                <include reference="H5A-7b-SSQ"/>
+                                <include reference="QGM-eo-DAg"/>
+                                <include reference="n9d-hQ-bfN"/>
+                                <include reference="IaB-ak-xpQ"/>
+                                <include reference="nsk-Pf-4ga"/>
+                                <include reference="yVZ-zc-BSg"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="getDeviceIDButton" destination="niH-1b-NOk" id="jgq-t8-ffC"/>
+                        <outlet property="getDeviceIDLabel" destination="i9G-s3-RpR" id="ZOY-MI-OI0"/>
+                        <outlet property="upLoadButton" destination="0j0-Dp-jch" id="4ve-bL-NOg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="409.5" y="305"/>
+        </scene>
+    </scenes>
+</document>
